@@ -1,0 +1,73 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header container */
+  #header {
+    display: flex;
+    justify-content: space-between; /* Align child elements to the left and right corners */
+    align-items: center; /* Vertically center elements */
+    padding: 10px 20px;
+    background-color: #f4f4f4; /* Light background for the header */
+    border-bottom: 1px solid #ddd; /* Subtle border */
+  }
+  
+  /* Select Date Form styles */
+  #selectDateForm {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between label, input, and button */
+  }
+  
+  #selectDateForm label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  #selectDateForm input[type="date"] {
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  #selectDateForm button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  #selectDateForm button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Generate Report Button styles */
+  #generateReportButton {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  #generateReportButton:hover {
+    background-color: #1e7e34;
+  }
+  
+  /* Report Display Styles */
+  #report {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  

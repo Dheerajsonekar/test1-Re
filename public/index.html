@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <label for="attendanceDate">Select Date:</label>
+      <input type="date" id="attendanceDate" />
+      <button id="searchButton" onclick="fetchStudents()">Search</button>
+    </div>
+
+    <form id="attendanceForm"></form>
+
+    <button
+      id="markAttendanceButton"
+      onclick="submitAttendance()"
+      style="display: none"
+    >
+      Mark Attendance
+    </button>
+
+    <div>
+      <button onclick="generateReport()">Generate Report</button>
+      <div id="report"></div>
+    </div>
+
+    <script src="./script.js" async defer></script>
+  </body>
+</html>
