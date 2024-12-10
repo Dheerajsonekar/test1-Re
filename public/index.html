@@ -10,24 +10,28 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div>
-      <label for="attendanceDate">Select Date:</label>
-      <input type="date" id="attendanceDate" />
-      <button id="searchButton" onclick="fetchStudents()">Search</button>
+    <div id="header">
+      <form id="selectDateForm">
+        <label for="attendanceDate">Select Date:</label>
+        <input type="date" id="attendanceDate" />
+        <button id="searchButton" type="button" onclick="fetchStudents(event)">
+          Search
+        </button>
+      </form>
+
+      <button id="generateReportButton" onclick="generateReport()">
+        Generate Report
+      </button>
     </div>
 
-    <form id="attendanceForm"></form>
+    <div id="attendanceFormContainer">
+      <form id="attendanceForm"></form>
+      <button id="markAttendanceButton" onclick="submitAttendance()" style="display: none">
+        Mark Attendance
+      </button>
+    </div>
 
-    <button
-      id="markAttendanceButton"
-      onclick="submitAttendance()"
-      style="display: none"
-    >
-      Mark Attendance
-    </button>
-
-    <div>
-      <button onclick="generateReport()">Generate Report</button>
+    <div id="generateReportContainer">
       <div id="report"></div>
     </div>
 
